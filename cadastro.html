@@ -1,43 +1,40 @@
 <!DOCTYPE html>
-<<html lang="pt-BR">
+<html lang="pt-br">
 
-    <head>
-        <meta charset="UTF-8">
-        <title>Bem Vindo ao PetService</title>
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <title>Bem Vindo ao PetService</title>
+</head>
 
-    <body>
-        <h1>Pet Service</h1>
-        <h2>Agendamento de Serviços para Petshop</h2>
-        <form>
-            <h2>Cadastro do Cliente e Pet</h2>
+<body>
+    <h1>Pet Service</h1>
 
-            <label for="nome">Nome do Tutor:</label><br>
-            <input type="text" id="nome" name="nome" required><br><br>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="cadastro.html">Cadastro</a></li>
+        <li><a href="#">Login</a></li>
+    </ul>
 
-            <label for="pet">Nome do Pet:</label><br>
-            <input type="text" id="pet" name="pet" required><br><br>
+    <h2>Cadastro do Cliente e Pet</h2>
 
-            <label for="raca">Raça:</label><br>
-            <input type="text" id="raca" name="raca"><br><br>
+    <form>
+        <p>
+            <label for="cadastro_nome">Nome do Tutor:</label><br>
+            <input type="text" id="cadastro_nome" name="nome" required><br><br>
+        </p>
 
-            <label for="servico">Serviço:</label><br>
-            <select id="servico" name="servico">
-                <option>Banho</option>
-                <option>Tosa</option>
-                <option>Vacina</option>
-                <option>Consulta</option>
-            </select><br><br>
+        <p>
+            <label for="cadastro_pet">Nome do Pet:</label><br>
+            <input type="text" id="cadastro_pet" name="pet" required><br><br>
+        </p>
 
-            <label for="data">Data:</label><br>
-            <input type="date" id="data" name="data" required><br><br>
+        <p>
+            <label for="cadastro_raca">Raça:</label><br>
+            <input type="text" id="cadastro_raca" name="raca"><br><br>
+        </p>
 
-            <label for="hora">Horário:</label><br>
-            <input type="time" id="hora" name="hora" required><br><br>
+    </form>
 
-            <button type="submit">Agendar</button>
-        </form>
+</body>
 
-    </body>
-
-    </html>
+</html>
