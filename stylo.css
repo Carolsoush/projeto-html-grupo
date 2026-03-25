@@ -1,105 +1,86 @@
-/* RESET */
-*    {
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
 body {
-    text-align: center;
     font-family: 'Segoe UI', Tahoma, sans-serif;
-    background: linear-gradient(135deg, #fff7ed, #fef3c7);
+    background: #fff7ed;
     color: #444;
-    line-height: 1.6;
+    line-height: 1.5;
+    text-align: center;
+}
+
+home li {
+    list-style: none;
+    display: inline-block;
+    margin: 0 10px;
 }
 
 .container {
-    text-align: center;
     max-width: 1100px;
-    margin: 0 auto;
+    margin: auto;
     padding: 20px;
 }
 
-h1,
-h2 {
+h1,h2 {
     color: #f97316;
     margin-bottom: 20px;
 }
 
 header {
-    background: linear-gradient(135deg, #f97316, #fb923c);
+    background-color: #f97316;
     color: white;
-    padding: 40px 20px;
-    text-align: center;
-    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
-    border-bottom-left-radius: 30px;
-    border-bottom-right-radius: 30px;
+    padding: 30px;
 }
 
 nav {
-    margin-top: 15px;
+    margin-top: 10px;
 }
 
 nav a {
     display: inline-block;
-    padding: 10px 20px;
-    margin: 8px;
-    border-radius: 25px;
-    background: rgba(203, 238, 8, 0.2);
+    padding: 8px 16px;
+    margin: 5px;
+    border-radius: 20px;
+    background: #fb923c;
     color: white;
     text-decoration: none;
     font-weight: bold;
-    backdrop-filter: blur(5px);
-    transition: all 0.3s ease;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
 }
 
-/* HOVER MAIS BONITO */
 nav a:hover {
     background: #fde68a;
     color: #c2410c;
-    transform: translateY(-3px) scale(1.05);
 }
 
 table {
     width: 100%;
-    margin: 30px 0;
+    margin-top: 20px;
     border-collapse: collapse;
-    border-radius: 15px;
-    overflow: hidden;
-    background: #ffffff;
-    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    background: white;
 }
 
 th {
-    background: linear-gradient(135deg, #22c55e, #4ade80);
+    background: #22c55e;
     color: white;
-    text-transform: uppercase;
-    font-size: 0.85rem;
-    letter-spacing: 1px;
+    font-size: 0.9rem;
 }
 
 th,
 td {
-    padding: 14px 16px;
-    text-align: left;
+    padding: 10px;
+    border: 1px solid #ddd;
 }
 
 tr:nth-child(even) {
-    background-color: #f0fdf4;
-}
-
-tr:hover {
-    background-color: #dcfce7;
-    transform: scale(1.01);
-    transition: all 0.2s ease;
+    background: #f9fafb;
 }
 
 .bloco-claro {
-    background: #ffffff;
-    border-left: 6px solid #f97316;
+    background: white;
     padding: 15px;
-    border-radius: 10px;
-    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.08);
-    margin-bottom: 20px;
+    border-left: 4px solid #f97316;
+    margin-top: 20px;
 }
