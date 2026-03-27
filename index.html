@@ -1,27 +1,63 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Bem Vindo ao PetService">
+    <title>PetService — Login</title>
+    <link rel="stylesheet" href="style.css">
+</head>
 
 <body>
-    <meta charset="UTF-8">
-    <title>Bem Vindo ao PetService</title>
-    <link rel="stylesheet" href="stylo.css">
-    <img src="https://cdn-icons-png.flaticon.com/512/616/616408.png" alt="background" class="logo">
-    </head>
+    <header>
+        <div class="container">
+            <h1>PetService</h1>
+            <p>Seu gerenciador de serviços para pets</p>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Login</a></li>
+                    <li><a href="cadastro.html">Novo Cadastro</a></li>
+                    <li><a href="agenda.html">Agendamento</a></li>
+                    <li><a href="tabela.html">Tabela</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 
-    <body>
-        <h1>Pet Service</h1>
-        <p>
-        <h2>Bem-vindo ao sistema de agendamento.</h2>
-        </p>
-        <ul id="menu-principal">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="cadastro.html">Cadastro</a></li>
-            <li><a href="login.html">Login</a></li>
-            <li><a href="agenda.html">Agendamento</a></li>
-            <li><a href="tabela.html">Tabela</a></li>
-        </ul>
-    </body>
+    <main>
+        <div class="container">
+            <section id="login" class="secao-form secao-login">
+                <h2>Login</h2>
+
+                <form id="login-form" action="estatisticas.html" method="get">
+                    <div class="form-grupo">
+                        <label for="login-email">E-mail</label>
+                        <input type="email" id="login-email" name="email" placeholder="seu@email.com"
+                            value="aluno@senac.br" required>
+                    </div>
+
+                    <div class="form-grupo">
+                        <label for="login-senha">Senha</label>
+                        <input type="password" id="login-senha" name="senha" placeholder="Digite sua senha"
+                            value="senac123" required>
+                        <small class="dica">Demo: cliente@dog.br / senac123</small>
+                    </div>
+
+                    <div class="form-acoes">
+                        <button type="submit" class="btn btn-primario">Entrar</button>
+                    </div>
+                </form>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; PetService &mdash; Projeto Programador de Web</p>
+            <p>Gerenciador de serviços para pets</p>
+        </div>
+    </footer>
+</body>
 
 </html>
