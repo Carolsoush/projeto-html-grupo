@@ -3,55 +3,73 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tabela de Preços Petshop</title>
-    <link rel="stylesheet" href="stylo.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <h2>Tabela de Preços - Serviços</h2>
-    <ul>
-        <li><a href="index.html">Home</a></li>
-    </ul>
+    <header>
+        <h1>Tabela de Preços - Serviços</h1>
+         <nav>
+            <a href="index.html">Home</a>
+        </nav>
+    </header>
 
-    <table border="2">
-        <tr>
-            <th>Serviço</th>
-            <th>Pequeno</th>
-            <th>Médio</th>
-            <th>Grande</th>
-        </tr>
+    <main>
+        <div class="container">
 
-        <tr>
-            <td>Banho</td>
-            <td>R$ 40,00</td>
-            <td>R$ 55,00</td>
-            <td>R$ 80,00</td>
-        </tr>
+            <table class="tabela-precos">
+                <thead>
+                    <tr>
+                        <th>Serviço</th>
+                        <th>Porte Pequeno</th>
+                        <th>Porte Médio</th>
+                        <th>Porte Grande</th>
+                    </tr>
+                </thead>
 
-        <tr>
-            <td>Banho e Tosa</td>
-            <td>R$ 60,00</td>
-            <td>R$ 70,00</td>
-            <td>R$ 75,00</td>
-        </tr>
+                <tbody>
+                    <tr>
+                        <td>Banho</td>
+                        <td>R$ 40,00</td>
+                        <td>R$ 55,00</td>
+                        <td>R$ 80,00</td>
+                    </tr>
 
-        <tr>
-            <td>Tosa Higiênica</td>
-            <td>R$ 25,00</td>
-            <td>R$ 35,00</td>
-            <td>R$ 50,00</td>
-        </tr>
+                    <tr>
+                        <td>Banho e Tosa</td>
+                        <td>R$ 60,00</td>
+                        <td>R$ 70,00</td>
+                        <td>R$ 75,00</td>
+                    </tr>
 
-        <tr>
-            <td>Tosa Completa</td>
-            <td>R$ 40,00</td>
-            <td>R$ 55,00</td>
-            <td>R$ 75,00</td>
-        </tr>
+                    <tr>
+                        <td>Tosa Higiênica</td>
+                        <td>R$ 25,00</td>
+                        <td>R$ 35,00</td>
+                        <td>R$ 50,00</td>
+                    </tr>
 
-    </table>
+                    <tr>
+                        <td>Tosa Completa</td>
+                        <td>R$ 40,00</td>
+                        <td>R$ 55,00</td>
+                        <td>R$ 75,00</td>
+                    </tr>
+                </tbody>
+            </table>
 
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 PetService — Projeto Programador de Web</p>
+            <p>Gerenciador de serviços para pets</p>
+        </div>
+    </footer>
 
 </body>
 

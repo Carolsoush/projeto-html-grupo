@@ -3,41 +3,67 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Bem Vindo ao PetService</title>
-    <link rel="stylesheet" href="stylo.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="PetService - Cadastro de novo cliente">
+    <title>PetService — Novo Cadastro</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <h1>Pet Service</h1>
+    <header>
+        <div class="container">
+            <h1>PetService</h1>
+            <nav>
+                <a href="index.html">Home</a>
+            </nav>
+            <p>Seu gerenciador de serviços para pets</p>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Login</a></li>
+                    <li><a href="cadastro.html">Novo Cadastro</a></li>
+                    <li><a href="agenda.html">Agendamento</a></li>
+                    <li><a href="tabela.html">Tabela</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 
-    <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="cadastro.html">Cadastro</a></li>
-    </ul>
+    <main>
+        <div class="container">
+            <section id="novo-cadastro" class="secao-form">
+                <h2>Novo Cadastro</h2>
+                <form>
+                    <p>
+                        <label for="login_nome">Nome do Tutor:</label><br>
+                        <input type="text" id="login_nome" name="nome" required><br><br>
+                    </p>
+                    <p>
+                        <label for="e-mail">E-mail do tutor:</label><br>
+                        <input type="email" id="e-mail" name="email" required><br><br>
+                    </p>
+                    <p>
+                        <label for="login_nome">Nome do PET:</label><br>
+                        <input type="text" id="login_nome" name="nome" required><br><br>
+                    </p>
+                    <p>
+                        <label for="login_nome">Data de nascimento do PET:</label><br>
+                        <input type="text" id="login_nome" name="nome" required><br><br>
+                    </p>
+                    <div>
+                        <button type="button" class="btn">Entrar</button>
+                        <button type="button" class="btn">Limpar</button>
+                    </div>
+                </form>
+            </section>
+        </div>
+    </main>
 
-    <h2>Cadastro do Cliente e Pet</h2>
-
-    <form>
-        <p>
-            <label for="cadastro_nome">Nome do Tutor:</label><br>
-            <input type="text" id="cadastro_nome" name="nome" required><br><br>
-        </p>
-
-        <p>
-            <label for="cadastro_pet">Nome do Pet:</label><br>
-            <input type="text" id="cadastro_pet" name="pet" required><br><br>
-        </p>
-
-        <p>
-            <label for="cadastro_raca">Raça:</label><br>
-            <input type="text" id="cadastro_raca" name="raca"><br><br>
-        </p>
-
-    </form>
-
-    <div>
-        <button type="button" class="btn">Salvar</button>
-    </div>
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 PetService &mdash; Projeto Programador de Web</p>
+            <p>Gerenciador de serviços para pets</p>
+        </div>
+    </footer>
 </body>
 
 </html>

@@ -3,53 +3,86 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Agendamento Petshop</title>
-    <link rel="stylesheet" href="stylo.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="PetService - Agendamento de serviços para pets">
+    <title>PetService — Agendamento</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <h2>Agendamento de Banho e Tosa</h2>
-    <ul>
-        <li><a href="index.html">Home</a></li>
-    </ul>
-    <form>
+    <header>
+        <div class="container">
+            <h1>PetService</h1>
+            <nav>
+                <a href="index.html">Home</a>
+            </nav>
+            <p>Seu gerenciador de serviços para pets</p>
 
-        <p>
-            <label>Seu nome:</label><br>
-            <input type="text" name="cliente" required>
-        </p>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Login</a></li>
+                    <li><a href="cadastro.html">Novo Cadastro</a></li>
+                    <li><a href="agenda.html">Agendamento</a></li>
+                    <li><a href="tabela.html">Tabela</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 
-        <p>
-            <label>Nome do pet:</label><br>
-            <input type="text" name="pet" required>
-        </p>
+    <main>
+        <section class="container">
+            <h2>Agendar Serviço</h2>
 
-        <p>
-            <label>Tipo de serviço:</label><br>
-            <select name="servico" required>
-                <option value="">Selecione</option>
-                <option value="banho_tosa">Banho e Tosa</option>
-                <option value="tosa_higienica">Tosa Higiênica</option>
-                <option value="tosa_completa">Tosa Completa</option>
-            </select>
-        </p>
+            <form>
+                <fieldset>
+                    <legend>Dados do Agendamento</legend>
 
-        <p>
-            <label>Escolha a data:</label><br>
-            <input type="date" name="data" required>
-        </p>
+                    <div class="form-group">
+                        <label for="cliente">Seu nome:</label>
+                        <input type="text" id="cliente" name="cliente" placeholder="Digite seu nome" required>
+                    </div>
 
-        <p>
-            <label>Escolha o horário:</label><br>
-            <input type="time" name="hora" required>
-        </p>
+                    <div class="form-group">
+                        <label for="pet">Nome do pet:</label>
+                        <input type="text" id="pet" name="pet" placeholder="Nome do pet" required>
+                    </div>
 
-        <p>
-            <button type="submit">Agendar Horário</button>
-        </p>
+                    <div class="form-group">
+                        <label for="servico">Tipo de serviço:</label>
+                        <select id="servico" name="servico" required>
+                            <option value="">Selecione</option>
+                            <option value="banho_tosa">Banho e Tosa</option>
+                            <option value="tosa_higienica">Tosa Higiênica</option>
+                            <option value="tosa_completa">Tosa Completa</option>
+                        </select>
+                    </div>
 
-    </form>
+                    <div class="form-group">
+                        <label for="data">Data:</label>
+                        <input type="date" id="data" name="data" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="hora">Horário:</label>
+                        <input type="time" id="hora" name="hora" required>
+                    </div>
+
+                    <div class="form-group">
+                        <button type="submit">Agendar</button>
+                    </div>
+
+                </fieldset>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 PetService &mdash; Projeto Programador de Web</p>
+            <p>Gerenciador de serviços para pets</p>
+        </div>
+    </footer>
 
 </body>
 
